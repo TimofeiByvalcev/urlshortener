@@ -9,6 +9,8 @@ class LocalSettings(BaseSettings):
     base_url: str = "http://localhost:8000"
     db_url: str = "sqlite:///./shoretener.db"
 
+    class Config:
+        env_file = ".env"
 
 @lru_cache()
 def get_settings() -> LocalSettings:
@@ -17,5 +19,4 @@ def get_settings() -> LocalSettings:
     return settings
 
 
-class Config:
-    env_file = ".env"
+
