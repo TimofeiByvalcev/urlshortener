@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     db_url: str = "sqlite:///./shoretener.db"
 
 
-def get_setting() -> Settings:
+def get_settings() -> Settings:
     settings = Settings()
-    print(f"LOadding setting for: {settings.env_name}")
+    print(f"Loading setting for: {settings.env_name}")
     return settings
 
