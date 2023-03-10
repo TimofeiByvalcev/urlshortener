@@ -1,4 +1,4 @@
 .idea/
 venv/
 urlshortener_app/__pycache__/
-
+.env
